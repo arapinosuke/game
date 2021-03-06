@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5443138415372984030}
   - component: {fileID: 5443138415372984000}
   - component: {fileID: 5443138415372984031}
+  - component: {fileID: 6266728561737346990}
   m_Layer: 5
   m_Name: Ball
   m_TagString: Untagged
@@ -74,3 +75,27 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6266728561737346990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5443138415372984029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca2db2aa98da25d48828185ec31d050e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsTouch: 0
+  CurrentPos: {x: 0, y: 0}
+  BoardPos: {x: 0, y: 0}
+  DestroyFlag: 0
+  sprites:
+  - {fileID: 21300000, guid: 738df591ae3121740acf4063d0122900, type: 3}
+  - {fileID: 21300000, guid: 8560a7ebb698b5b479d57c97bbc79df1, type: 3}
+  - {fileID: 21300000, guid: 7e6beb94df4032446b7af7dfaf73f9c3, type: 3}
+  - {fileID: 21300000, guid: cf615876a514cbb49a4186b980b974c1, type: 3}
+  - {fileID: 21300000, guid: c9cb820c7500cde429ea1610ba608813, type: 3}
+  - {fileID: 21300000, guid: ef051160048d4e74886520c56147411a, type: 3}
+  ThisBallType: -1
