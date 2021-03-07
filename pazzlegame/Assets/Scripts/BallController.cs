@@ -8,6 +8,7 @@ public class BallController : MonoBehaviour, IPointerDownHandler, IDragHandler, 
 {
     public bool IsTouch = false;
 
+    private Piece[,] board;
     RectTransform RectTransform;
 
     // 移動用のVectro2
@@ -96,4 +97,16 @@ public class BallController : MonoBehaviour, IPointerDownHandler, IDragHandler, 
 
         }
     }
+
+    // 特定のピースのが削除されているかを判断し、削除されているなら詰めるか、それができなければ新しく生成する
+    private void FillPiece(Vector2 pos)
+    {
+        var piece = board[(int)pos.x, (int)pos.y];
+        if (piece != null && !piece.deleteFlag)
+        {
+            // ピースが削除されていなければ何もしない
+            return;
+        }
+    }
 }
+
