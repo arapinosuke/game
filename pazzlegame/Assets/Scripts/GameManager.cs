@@ -73,7 +73,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            selectedPiece = board.GetNearestPiece(Input.mousePosition);
+            selectedPiece = ballController.GetNearestPiece(Input.mousePosition);
             currentState = GameState.PieceMove;
         }
     }
